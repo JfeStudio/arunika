@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ChallengeController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,13 +15,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', HomeController::class)->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::resource('challenges', ChallengeController::class);
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashboard.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
