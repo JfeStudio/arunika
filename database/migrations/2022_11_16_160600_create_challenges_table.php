@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('challenges', function (Blueprint $table) {
             $table->id();
+            $table->string('fee');
+            $table->string('title')->unique();
+            $table->string('markup');
+            $table->string('styling');
+            $table->string('language');
+            // $table->string('role');
+            $table->string('mode');
+            $table->string('description');
+            $table->string('images');
             $table->timestamps();
         });
     }

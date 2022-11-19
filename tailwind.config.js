@@ -29,8 +29,22 @@ module.exports = {
             // "3xl": "0 -5px 10px rgba(0, 0, 0, 0.1)",
             "3xl": "0 5px 15px 0 rgb(0 0 0 / 8%)",
         },
+         colors: {
+            holy: "#fafafa",
+            "holy-blur": "#f2f2f2",
+            primary: "#0d6efd",
+            dark: "#1e293b",
+            "dark-scy": "#132c33",
+            info: "#0dcaf0",
+            warning: "#ffc107",
+            danger: "#dc3545",
+            secondary: "#4b5563",
+            graysly: "#cbd5e1",
+            start: "#126e82",
+            tailwind: "#06B6D4",
         },
     },
+},
 
     plugins: [
         require('@tailwindcss/forms'),

@@ -7,6 +7,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- icons -->
+    <link rel="icon" href="public/images/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    {{-- <link rel="icon" href="https://fonts.googleapis.com"> --}}
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

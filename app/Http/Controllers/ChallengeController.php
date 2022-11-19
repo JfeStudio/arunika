@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\challenge;
 use Illuminate\Http\Request;
 
 class ChallengeController extends Controller
@@ -13,7 +14,9 @@ class ChallengeController extends Controller
      */
     public function index()
     {
-        return view('dashboard.challenges.index');
+        return view('dashboard.challenges.index', [
+            'challenges' => challenge::orderBy('id', 'DESC')->paginate(3),
+        ]);
     }
 
     /**
@@ -23,7 +26,7 @@ class ChallengeController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.challenges.create');
     }
 
     /**
@@ -45,7 +48,7 @@ class ChallengeController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('dashboard.challenges.show');
     }
 
     /**
@@ -56,7 +59,7 @@ class ChallengeController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('dashboard.challenges.edit');
     }
 
     /**

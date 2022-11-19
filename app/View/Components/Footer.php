@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Navbar extends Component
+class Footer extends Component
 {
     /**
      * Create a new component instance.
@@ -23,14 +23,6 @@ class Navbar extends Component
      */
     public function render()
     {
-         $navbar = [
-            // '/' => 'Home',
-            'cards' => 'Challenges',
-            'resources' => 'Resources',
-            'solution' => 'Solution',
-            'unlock' => 'Unlock',
-            'templates' => 'Free Templates',
-        ];
-        return view('layouts.navbar', compact('navbar'));
+        return view('components.footer');
     }
 }
