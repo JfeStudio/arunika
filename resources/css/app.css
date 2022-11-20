@@ -26,3 +26,12 @@ body {
     @apply text-xs scale-[.8] bg-blue-700 rounded-full absolute text-slate-50 -top-5 -right-4 px-3.5 py-[.3rem];
     content: 'Pro';
 }
+.label-error {
+    @apply block mb-2 text-sm font-medium text-red-700 dark:text-red-500;
+}
+.textarea-error {
+    @apply block mb-2 text-sm border border-red-500 font-medium text-red-700 dark:text-red-500 placeholder-red-700;
+}
+.input-error {
+    @apply bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500;
+}

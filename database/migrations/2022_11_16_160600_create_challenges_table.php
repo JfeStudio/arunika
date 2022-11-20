@@ -23,7 +23,7 @@ return new class extends Migration
             // $table->string('role');
             $table->string('mode');
             $table->string('description');
-            $table->string('images');
+            $table->string('images')->nullable();
             $table->timestamps();
         });
     }

@@ -205,9 +205,10 @@
                                 </div>
                                 <div class="paragraf-info">
                                     <p class="text-[.8rem] text-secondary">
-                                        Proyek galeri seni dua halaman ini akan sempurna jika Anda
+                                        {{ $challenge->description }}
+                                        {{-- Proyek galeri seni dua halaman ini akan sempurna jika Anda
                                         siap untuk mengerjakan project bagian ini, Ada beberapa
-                                        tantangan tata letak yang sangat menarik!
+                                        tantangan tata letak yang sangat menarik! --}}
                                     </p>
                                 </div>
                             </div>

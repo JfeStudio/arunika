@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\challenge;
+use App\Models\Challenge;
 use Illuminate\Http\Request;
 
 class ChallengeController extends Controller
@@ -15,7 +15,7 @@ class ChallengeController extends Controller
     public function index()
     {
         return view('dashboard.challenges.index', [
-            'challenges' => challenge::orderBy('id', 'DESC')->paginate(3),
+            'challenges' => Challenge::orderBy('id', 'DESC')->paginate(3),
         ]);
     }
 
@@ -37,7 +37,19 @@ class ChallengeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'fee' => ['required'],
+            'title' => ['required', 'string', 'min:3', 'max:255',],
+            'markup' => ['required', 'string', 'min:3', 'max:255', 'alpha'],
+            'styling' => ['required'],
+            'language' => ['required'],
+            'mode' => ['required'],
+            // 'images' => ['required', 'string', 'max:255'],
+            'description' => ['required', 'string', 'min:10', 'max:255'],
+        ]);
+        $input = $request->all();
+        Challenge::create($input);
+        return redirect('challenges')->with('success', 'Data was successful!');
     }
 
     /**
@@ -57,9 +69,9 @@ class ChallengeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Challenge $challenge)
     {
-        return view('dashboard.challenges.edit');
+        return view('dashboard.challenges.edit', compact('challenge'));
     }
 
     /**
@@ -71,7 +83,20 @@ class ChallengeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+       $request->validate([
+            'fee' => ['required'],
+            'title' => ['required', 'string', 'min:3', 'max:255',],
+            'markup' => ['required', 'string', 'min:3', 'max:255', 'alpha'],
+            'styling' => ['required'],
+            'language' => ['required'],
+            'mode' => ['required'],
+            // 'images' => ['required', 'string', 'max:255'],
+            'description' => ['required', 'string', 'min:10', 'max:255'],
+        ]);
+        // dd($request);
+        $input = $request->all();
+        Challenge::find($id)->update($input);
+        return redirect('challenges')->with('success', 'Edited was successful!');
     }
 
     /**
@@ -82,6 +107,7 @@ class ChallengeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Challenge::find($id)->delete();
+         return back()->with('success', 'Data delete was successful!');
     }
 }

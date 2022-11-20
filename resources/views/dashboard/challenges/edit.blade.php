@@ -6,70 +6,85 @@
     </x-slot>
 
     <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <form class="bg-white p-5 rounded-md flex flex-wrap gap-x-7">
+        <form action="{{ route('challenges.update', $challenge->id) }}" method="post"
+            class="bg-white p-5 rounded-md flex flex-wrap gap-x-7">
+            @csrf
+            @method('PUT')
             <div class="lg:basis-4/12">
                 <div class="mb-6">
                     <label for="fee" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fee</label>
-                    <select id="fee"
+                    <select id="fee" name="fee"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option selected>Free / Premium</option>
-                        <option value="Free">Free</option>
-                        <option value="Premium">Premium</option>
+                        {{-- <option select>Free / Premium</option> --}}
+                        <option value="Free" {{ $challenge->fee == 'Free' ? 'selected' : '' }}>Free</option>
+                        <option value="Premium" {{ $challenge->fee == 'Premium' ? 'selected' : '' }}>Premium</option>
                     </select>
                 </div>
                 <div class="mb-6">
                     <label for="title"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
-                    <input type="text" id="title"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Title Website" required>
+                        class="@error('title') label-error @enderror block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
+                    <input type="text" id="title" name="title" value="{{ old('title', $challenge->title) }}"
+                        class="@error('title') input-error @enderror bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Title Website">
+                    @error('title')
+                        <p class="mt-2 font-medium text-xs text-red-600 dark:text-red-500">{{ $message }}</p>
+                    @enderror
                 </div>
                 <div class="mb-6">
                     <label for="markup"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Markup</label>
-                    <input type="text" id="markup"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Markup HTML" required>
+                        class="@error('markup') label-error @enderror block mb-2 text-sm font-medium text-gray-900 dark:text-white">Markup</label>
+                    <input type="text" id="markup" name="markup" value="{{ $challenge->markup }}"
+                        class="@error('markup') input-error @enderror bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Markup HTML">
+                    @error('markup')
+                        <p class="mt-2 font-medium text-xs text-red-600 dark:text-red-500">{{ $message }}</p>
+                    @enderror
                 </div>
             </div>
             <div class="lg:basis-4/12">
                 <div class="mb-6">
                     <label for="styling"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Styling</label>
-                    <select id="styling"
+                    <select id="styling" name="styling"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option selected>Format Styling</option>
-                        <option value="CSS">CSS</option>
-                        <option value="Bootstrap">Bootstrap</option>
-                        <option value="Tailwind">Tailwind</option>
-                        <option value="Bulma">Bulma</option>
-                        <option value="Chakra UI">Chakra UI</option>
+                        {{-- <option selected>Format Styling</option> --}}
+                        <option value="CSS" {{ $challenge->styling == 'CSS' ? 'selected' : '' }}>CSS</option>
+                        <option value="Bootstrap" {{ $challenge->styling == 'Bootstrap' ? 'selected' : '' }}>Bootstrap
+                        </option>
+                        <option value="Tailwind" {{ $challenge->styling == 'Tailwind' ? 'selected' : '' }}>Tailwind
+                        </option>
+                        <option value="Bulma" {{ $challenge->styling == 'Bulma' ? 'selected' : '' }}>Bulma</option>
+                        <option value="Chakra UI" {{ $challenge->styling == 'Chakra UI' ? 'selected' : '' }}>Chakra UI
+                        </option>
                     </select>
                 </div>
                 <div class="mb-6">
                     <label for="language"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Language</label>
-                    <select id="language"
+                    <select id="language" name="language"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option selected>Format Language</option>
-                        <option value="JS">JS</option>
-                        <option value="VUE">VUE</option>
-                        <option value="REACT">REACT</option>
-                        <option value="ANGULAR">ANGULAR</option>
-                        <option value="SVELTE">SVELTE</option>
+                        {{-- <option selected>Format Language</option> --}}
+                        <option value="JS" {{ $challenge->language == 'JS' ? 'selected' : '' }}>JS</option>
+                        <option value="VUE" {{ $challenge->language == 'VUE' ? 'selected' : '' }}>VUE</option>
+                        <option value="REACT" {{ $challenge->language == 'REACT' ? 'selected' : '' }}>REACT</option>
+                        <option value="ANGULAR" {{ $challenge->language == 'ANGULAR' ? 'selected' : '' }}>ANGULAR
+                        </option>
+                        <option value="SVELTE" {{ $challenge->language == 'SVELTE' ? 'selected' : '' }}>SVELTE</option>
                     </select>
                 </div>
                 <div class="mb-6">
                     <label for="mode"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mode</label>
-                    <select id="mode"
+                    <select id="mode" name="mode"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option selected>Format Mode</option>
-                        <option value="CSS">Newbie</option>
-                        <option value="Bootstrap">Junior</option>
-                        <option value="Tailwind">Intermediate</option>
-                        <option value="Bulma">Advanced</option>
-                        <option value="Chakra UI">Guru</option>
+                        {{-- <option selected>Format Mode</option> --}}
+                        <option value="Newbie" {{ $challenge->mode == 'Newbie' ? 'selected' : '' }}>Newbie</option>
+                        <option value="Junior" {{ $challenge->mode == 'Junior' ? 'selected' : '' }}>Junior</option>
+                        <option value="Intermediate" {{ $challenge->mode == 'Intermediate' ? 'selected' : '' }}>
+                            Intermediate</option>
+                        <option value="Advanced" {{ $challenge->mode == 'Advanced' ? 'selected' : '' }}>Advanced
+                        </option>
+                        <option value="Guru" {{ $challenge->mode == 'Guru' ? 'selected' : '' }}>Guru</option>
                     </select>
                 </div>
             </div>
@@ -84,12 +99,14 @@
                         (MAX. 800x400px).</p>
                 </div>
                 <div
-                    class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+                    class="@error('description') textarea-error @enderror w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
                     <div class="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
                         <label for="comment" class="sr-only">Your comment</label>
-                        <textarea id="comment" rows="3"
-                            class="w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
-                            placeholder="Write a description..." required></textarea>
+                        <textarea id="comment" rows="3" name="description"
+                            class="@error('description') textarea-error @enderror w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
+                            placeholder="Write a description...">
+                            {{ old('description', $challenge->description) }}
+                        </textarea>
                     </div>
                     <div class="flex items-center justify-between py-1 border-t dark:border-gray-600">
                         <div class="flex pl-0 sm:pl-2">
@@ -126,6 +143,9 @@
                         </div>
                     </div>
                 </div>
+                @error('description')
+                    <p class="mt-2 font-medium text-xs text-red-600 dark:text-red-500">{{ $message }}</p>
+                @enderror
             </div>
             <div class="lg:basis-full">
                 <button type="submit"
