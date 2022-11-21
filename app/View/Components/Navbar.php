@@ -26,7 +26,7 @@ class Navbar extends Component
          $navbar = [
             // '/' => 'Home',
             'cards' => 'Challenges',
-            'resources' => 'Resources',
+            'sources' => 'Resources',
             'solution' => 'Solution',
             'unlock' => 'Unlock',
             'templates' => 'Free Templates',
