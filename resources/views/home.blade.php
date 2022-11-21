@@ -171,7 +171,7 @@
             <div class="rows-latest flex flex-wrap justify-center gap-y-5 md:gap-6">
                 @foreach ($challenges as $challenge)
                     <div class="cols-latest">
-                        <div class="card max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
+                        <div class="card border border-slate-100 max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
                             <div class="card-images relative">
                                 <span
                                     class="sale absolute right-2 top-2 z-10 block rounded-full bg-info py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white">{{ $challenge->fee }}</span>

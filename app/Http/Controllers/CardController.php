@@ -10,7 +10,7 @@ class CardController extends Controller
 {
     public function index(){
         return view('cards.index', [
-            'challenges' => DB::table('challenges')->get(),
+            'challenges' => DB::table('challenges')->orderBy('id', 'DESC')->get(),
         ]);
     }
 }
