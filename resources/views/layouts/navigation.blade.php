@@ -18,6 +18,21 @@
                     <x-nav-link :href="route('challenges.index')" :active="request()->routeIs('challenges.index')">
                         {{ __('Challenges') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('resources')" :active="request()->routeIs('resources')">
+                        {{ __('Resources') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('solution')" :active="request()->routeIs('solution')">
+                        {{ __('Solution') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('unlock')" :active="request()->routeIs('unlock')">
+                        {{ __('Unlock') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('users')" :active="request()->routeIs('users')">
+                        {{ __('Users') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('templates')" :active="request()->routeIs('templates')">
+                        {{ __('Templates') }}
+                    </x-nav-link>
                 </div>
             </div>
 

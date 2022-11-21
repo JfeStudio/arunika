@@ -38,7 +38,7 @@ const autoplay = new Swiper(".slide-autoplay", {
   },
 });
 
-// menu toggle
+// navigation scroll
 // const scrollNav = document.querySelector(".fixed");
 // window.addEventListener("scroll", () => {
 //   scrollNav.classList.toggle("header-fixed", this.scrollY > 0);

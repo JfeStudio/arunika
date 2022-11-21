@@ -1,8 +1,9 @@
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+<nav
+    class="bg-white px-2 sm:px-4 py-2 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center gap-1 mr-auto">
             <i class='bx bx-cube-alt text-3xl'></i>
-            <span class="font-serif self-center text-xl font-semibold whitespace-nowrap dark:text-white">Arunika</span>
+            <span class="font-lora self-center text-xl font-bold whitespace-nowrap dark:text-white">Arunika`</span>
         </a>
         <div class="flex items-center md:order-2 ml-2">
             @if (Route::has('login'))

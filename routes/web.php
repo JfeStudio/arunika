@@ -25,6 +25,26 @@ Route::get('/dashboard', function () {
     return view('dashboard.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/dashboard/resources', function () {
+    return view('resources.index');
+})->middleware(['auth', 'verified'])->name('resources');
+
+Route::get('/dashboard/solution', function () {
+    return view('solution.index');
+})->middleware(['auth', 'verified'])->name('solution');
+
+Route::get('/dashboard/unlock', function () {
+    return view('unlock.index');
+})->middleware(['auth', 'verified'])->name('unlock');
+
+Route::get('/dashboard/users', function () {
+    return view('users.index');
+})->middleware(['auth', 'verified'])->name('users');
+
+Route::get('/dashboard/templates', function () {
+    return view('templates.index');
+})->middleware(['auth', 'verified'])->name('templates');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

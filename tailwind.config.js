@@ -24,6 +24,7 @@ module.exports = {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
                 // font-family: 'Inter', sans-serif;
+                // lora: ['lora', sans-serif],
             },
             boxShadow: {
             // "3xl": "0 -5px 10px rgba(0, 0, 0, 0.1)",

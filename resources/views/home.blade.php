@@ -1,6 +1,6 @@
 <x-app-website>
     {{-- hero section --}}
-    <section class="content py-20 lg:py-11">
+    <section class="content py-20 lg:py-20">
         <div class="container mx-auto">
             <div class="rows-content flex flex-wrap gap-y-8 md:justify-between lg:items-center">
                 <div class="cols-content relative flex justify-center lg:basis-1/2 lg:justify-end">
@@ -66,35 +66,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="cols-content lg:order-first lg:basis-1/2">
-                    <h1 class="title-content px-6 text-center font-serif text-2xl font-[500] text-dark md:text-4xl">
+                <div class="cols-content lg:order-first text-center lg:basis-1/2">
+                    <h1
+                        class="title-content px-6 leading-tight text-center font-lora text-2xl font-poppins text-dark md:text-[2.4rem]">
                         Tingkatkan skill
                         <span class="font-bold text-primary">Front End</span> anda, dengan
                         membuat sebuah <span class="font-bold text-primary">Project</span>
                         nyata
                     </h1>
-                    <p class="font-poppins my-6 px-4 text-center text-sm text-dark">
+                    <p class="font-poppins my-6 px-4 text-center text-[.95rem] text-dark">
                         Selesaikan tantangan
-                        <span class="font-medium">HTML, CSS </span> dan
-                        <span class="font-medium">Javacript</span> dengan design
+                        <span class="font-medium italic">HTML, CSS </span> dan
+                        <span class="font-medium italic">Javacript</span> dengan design
                         profesional, untuk mengasah skill slicing design kita,
                         bergabunglah dengan kami untuk menyelesaikan suatu project dan
                         saling membantu satu sama lain untuk menjadi lebih baik.
                     </p>
-                    <a href="/login.html"
-                        class="login-with-google mx-auto mt-10 flex w-4/5 cursor-pointer items-center justify-center gap-x-2 rounded-full p-3 shadow-3xl hover:bg-white md:w-1/2">
-                        <img class="w-7" src="images/gmail.svg" alt="gmail" />
-                        <p class="text-base font-medium text-dark lg:text-sm">
-                            Sign in with Google
-                        </p>
-                    </a>
-                    <!-- <button
-              class="mx-auto mt-10 flex w-3/4 items-center justify-between rounded-full bg-holy px-8 py-2 font-medium text-dark shadow-3xl hover:bg-white md:w-[45%] lg:w-1/2 lg:text-sm"
-              type="submit"
-            >
-              Login with Google
-              <img class="w-8 lg:w-7" src="images/gmail.svg" alt="" />
-            </button> -->
+                    <div class="flex justify-center items-center gap-3">
+                        <a href="#challenges"
+                            class="flex items-center gap-2 text-white bg-blue-600 hover:bg-blue-700 border border-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-[.925rem] px-6 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                            <i class='bx bx-code-alt text-xl leading-none'></i>
+                            Mulai Sekarang</a>
+                        <a href="#community"
+                            class="flex items-center gap-2 text-blue-600 hover:text-white border border-blue-600 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-[.925rem] px-6 py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">
+                            <i class='bx bx-play-circle text-xl leading-none'></i>
+                            Pelajari Dulu
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,10 +110,10 @@
                             class="swiper-slide h-[220px] rounded-lg px-4 py-5 text-center md:max-w-sm md:shadow-3xl lg:max-w-md">
                             <img class="mx-auto w-28 drop-shadow-lg lg:w-24" src="images/img-introduction-2.svg"
                                 alt="" />
-                            <h3 class="mt-4 mb-3 text-sm font-medium text-dark">
+                            <h3 class="mt-4 mb-3 text-base font-medium text-dark">
                                 Choose your challenge
                             </h3>
-                            <p class="text-xs text-secondary">
+                            <p class="text-[.875rem] text-secondary">
                                 Lihat koleksi desain web kami, Pilih satu yang menurut Anda
                                 akan menjadi tantangan yang bagus untuk Anda pada tahap ini
                             </p>
@@ -124,10 +122,10 @@
                             class="swiper-slide h-[220px] rounded-lg px-4 py-5 text-center md:max-w-sm md:shadow-3xl lg:max-w-md">
                             <img class="mx-auto w-[5.7rem] drop-shadow-lg lg:w-[4.7rem]"
                                 src="images/img-introduction-6.svg" alt="" />
-                            <h3 class="mt-4 mb-3 text-sm font-medium text-dark">
+                            <h3 class="mt-4 mb-3 text-[.95rem] font-medium text-dark">
                                 Code the design
                             </h3>
-                            <p class="text-xs text-secondary">
+                            <p class="text-[.825rem] text-secondary">
                                 Mulai tantangan dan unduh semua file. Kami menyediakan semua
                                 file yang Anda perlukan untuk menyelesaikan tantangan.
                             </p>
@@ -136,10 +134,10 @@
                             class="swiper-slide h-[220px] rounded-lg px-4 py-5 text-center md:max-w-sm md:shadow-3xl lg:max-w-md">
                             <img class="mx-auto w-[6.5rem] drop-shadow-lg" src="images/img-introduction-4.svg"
                                 alt="" />
-                            <h3 class="mt-4 mb-3 text-sm font-medium text-dark">
+                            <h3 class="mt-4 mb-3 text-[.95rem] font-medium text-dark">
                                 Submit your solution
                             </h3>
-                            <p class="text-xs text-secondary">
+                            <p class="text-[.825rem] text-secondary">
                                 Posting solusi Anda di platform agar semua orang dapat melihat
                                 dan mendapatkan umpan balik tentang kode Anda dari pengembang
                                 lain.
@@ -149,10 +147,10 @@
                             class="swiper-slide h-[220px] rounded-lg px-4 py-5 text-center md:max-w-sm md:shadow-3xl lg:max-w-md">
                             <img class="mx-auto w-28 drop-shadow-lg lg:w-24" src="images/img-introduction-3.svg "
                                 alt="" />
-                            <h3 class="mt-4 mb-3 text-sm font-medium text-dark">
+                            <h3 class="mt-4 mb-3 text-[.95rem] font-medium text-dark">
                                 Give others feedback
                             </h3>
-                            <p class="text-xs text-secondary">
+                            <p class="text-[.825rem] text-secondary">
                                 Bantu orang lain sambil memperdalam pengetahuan Anda sendiri
                                 dengan memberikan umpan balik tentang solusi.
                             </p>
@@ -164,7 +162,7 @@
         </div>
     </section>
     {{-- challenges (latest) --}}
-    <section class="latest py-16">
+    <section id="challenges" class="latest py-16 -scroll-mt-24">
         <div class="container relative mx-auto overflow-hidden rounded-t-3xl">
             <div class="rounded-blank absolute top-0 left-0 right-0 -z-10 h-80 bg-dark"></div>
             <h1 class="my-10 text-center font-serif text-2xl font-medium text-slate-50 md:text-[1.6rem] lg:my-16">
@@ -217,7 +215,7 @@
                 @endforeach
             </div>
             <a class="mx-auto mt-8 block max-w-max text-center text-sm text-dark underline hover:no-underline md:mt-12"
-                href="./public/challenges.html">Lihat semua Challenges</a>
+                href="/cards">Lihat semua Challenges</a>
         </div>
     </section>
 
