@@ -7,6 +7,7 @@ use App\Http\Controllers\HowController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SourceController;
 use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', HomeController::class)->name('home');
 
+Route::get('users', [UserController::class, 'index'])->name('users.index');
 Route::resource('challenges', ChallengeController::class);
 Route::get('sources', SourceController::class, 'index');
 Route::get('hows', [HowController::class, 'index']);
