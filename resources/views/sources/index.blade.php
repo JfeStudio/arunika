@@ -1,4 +1,4 @@
-<x-app-website>
+<x-app-website :title="' | Resources'">
     <section class="resources py-24 lg:py-28">
         <div class="container mx-auto">
             <!-- ==learning== -->

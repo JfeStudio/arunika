@@ -1,4 +1,4 @@
-<x-app-website>
+<x-app-website :title="' | Templates'">
     <section class="title-templates pt-24 md:pt-28">
         <div class="container mx-auto">
             <div class="title-template">
@@ -328,7 +328,7 @@
 
             <!-- not sure which one to buy? -->
             <div
-                class="features line-features relative mx-auto mt-10 mb-14 rounded-md bg-dark-scy p-9 md:w-[95%] lg:my-20 lg:py-16">
+                class="features line-features relative mx-auto mt-10 mb-14 rounded-md bg-gray-800 p-9 md:w-[95%] lg:my-20 lg:py-16">
                 <div class="rows-features flex flex-wrap justify-center gap-y-6 lg:items-center lg:justify-between">
                     <div class="title-features font-serif text-lg font-semibold text-holy-blur">
                         <h1 class="text-center md:text-xl lg:text-2xl">

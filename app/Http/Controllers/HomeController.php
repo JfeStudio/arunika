@@ -16,6 +16,7 @@ class HomeController extends Controller
     public function __invoke(Request $request)
     {
         return view('home',[
+            'title' => '| Home',
             'challenges' => DB::table('challenges')->orderBy('id', 'DESC')->skip(0)->take(6)->get(),
         ]);
     }

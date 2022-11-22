@@ -1,4 +1,4 @@
-<x-app-website>
+<x-app-website :title="' - How to challenges'">
     <div class="container mx-auto">
         <section class="lg:py-24">
             {{-- intro --}}

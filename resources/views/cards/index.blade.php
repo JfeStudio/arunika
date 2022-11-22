@@ -1,4 +1,4 @@
-<x-app-website>
+<x-app-website :title="' | Challenges'">
     <!-- title challenges -->
     <div class="title-challenges pt-28 md:pt-32">
         <div class="container mx-auto">

@@ -1,4 +1,4 @@
-<x-app-website>
+<x-app-website :title="' | Homepage'">
     {{-- hero section --}}
     <section class="content py-20 lg:py-20">
         <div class="container mx-auto">
