@@ -175,7 +175,7 @@
                             <div class="card-images relative">
                                 <span
                                     class="sale absolute right-2 top-2 z-10 block rounded-full bg-info py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white">{{ $challenge->fee }}</span>
-                                <a href="./public/challenges-now.html">
+                                <a href="{{ route('homes.show', $challenge->id) }}">
                                     <img class="h-56 rounded-lg object-cover drop-shadow-sm"
                                         src="https://source.unsplash.com/random/1200x700" alt="images project" />
                                 </a>

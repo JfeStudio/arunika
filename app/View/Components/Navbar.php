@@ -26,11 +26,11 @@ class Navbar extends Component
     {
          $navbar = [
             // '/' => 'Home',
-            'cards' => 'Challenges',
-            'solution' => 'Solution',
-            'sources' => 'Resources',
-            'unlock' => 'Unlock',
-            'templates' => 'Free Templates',
+            '/cards' => 'Challenges',
+            '/solution' => 'Solution',
+            '/sources' => 'Resources',
+            '/unlock' => 'Unlock',
+            '/templates' => 'Free Templates',
         ];
         return view('layouts.navbar', compact('navbar'));
     }
