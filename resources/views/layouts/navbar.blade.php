@@ -1,5 +1,5 @@
 <nav
-    class="bg-white px-2 py-2 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    class="bg-white px-2 py-2 dark:bg-gray-900 fixed w-full z-30 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center gap-1 mr-auto">
             <i class='bx bx-cube-alt text-3xl'></i>

@@ -17,34 +17,38 @@
                     <div class="cols-latest">
                         <div class="card border border-slate-100 max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
                             <div class="card-images relative">
-                                <span
-                                    class="sale absolute right-2 top-2 z-10 block rounded-full bg-info py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white">Free</span>
-                                <a href="{{ route('cards.show', $challenge->id) }}">
-                                    <img class="h-56 rounded-lg object-cover drop-shadow-sm"
-                                        src="https://source.unsplash.com/random/1200x700" alt="images project" />
-                                </a>
+                                <div class="relative rounded-lg overflow-hidden">
+                                    <a href="{{ route('cards.show', $challenge->id) }}">
+                                        <div class="news-info before:z-10"></div>
+                                        <img class="h-56 object-cover drop-shadow-sm"
+                                            src="https://source.unsplash.com/random/1200x700" alt="images project" />
+                                    </a>
+                                </div>
                             </div>
                             <div class="card-body py-3">
-                                <a href="./challenges-now.html" class="mt-1 block font-serif text-lg font-medium">
+                                <a href="./challenges-now.html"
+                                    class="mt-1 block capitalize font-serif text-lg font-medium">
                                     {{ $challenge->title }}
                                 </a>
                                 <div class="info-language my-3 flex justify-between">
                                     <div class="language flex items-center gap-x-3">
-                                        <span class="text-base font-medium text-danger">{{ $challenge->markup }}</span>
-                                        <span class="text-base font-medium text-info">{{ $challenge->styling }}</span>
                                         <span
-                                            class="text-base font-medium text-warning">{{ $challenge->language }}</span>
+                                            class="text-base font-medium uppercase text-danger">{{ $challenge->markup }}</span>
+                                        <span
+                                            class="text-base font-medium uppercase text-info">{{ $challenge->styling }}</span>
+                                        <span
+                                            class="text-base font-medium uppercase text-warning">{{ $challenge->language }}</span>
                                     </div>
                                     <div class="mode flex items-center rounded-sm border border-warning text-slate-50">
-                                        <span
-                                            class="bg-warning px-2 py-[.2rem] text-xs font-semibold text-holy">3</span>
+                                        <i
+                                            class="bx bx-dumbbell bg-warning px-2 py-[.2rem] text-[1rem] font-semibold text-holy"></i>
                                         <span class="px-2 text-xs font-bold uppercase text-warning">
                                             {{ $challenge->mode }}
                                         </span>
                                     </div>
                                 </div>
                                 <div class="paragraf-info">
-                                    <p class="text-[.8rem] text-secondary">
+                                    <p class="text-[.8rem] capitalize text-secondary">
                                         {{ $challenge->description }}
                                     </p>
                                 </div>

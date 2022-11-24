@@ -174,11 +174,14 @@
                         <div class="card border border-slate-100 max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
                             <div class="card-images relative">
                                 <span
-                                    class="sale absolute right-2 top-2 z-10 block rounded-full bg-info py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white">{{ $challenge->fee }}</span>
-                                <a href="{{ route('homes.show', $challenge->id) }}">
-                                    <img class="h-56 rounded-lg object-cover drop-shadow-sm"
-                                        src="https://source.unsplash.com/random/1200x700" alt="images project" />
-                                </a>
+                                    class="fee absolute right-2 top-2 z-20 block rounded-full bg-blue-600 py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white">{{ $challenge->fee }}</span>
+                                <div class="relative rounded-lg overflow-hidden">
+                                    <a href="{{ route('homes.show', $challenge->id) }}">
+                                        <div class="news-info before:z-10"></div>
+                                        <img class="h-56 object-cover drop-shadow-sm"
+                                            src="https://source.unsplash.com/random/1200x700" alt="images project" />
+                                    </a>
+                                </div>
                             </div>
                             <div class="card-body py-3">
                                 <a href="#" class="mt-1 block capitalize font-serif text-lg font-medium">
@@ -193,10 +196,11 @@
                                         <span
                                             class="text-base font-medium uppercase text-warning">{{ $challenge->language }}</span>
                                     </div>
-                                    <div class="mode flex items-center rounded-sm border border-warning text-slate-50">
+                                    <div
+                                        class="mode flex items-center rounded-sm border border-gray-800 text-slate-50">
                                         <i
-                                            class="bx bx-dumbbell bg-warning px-2 py-[.2rem] text-[1rem] font-semibold text-holy"></i>
-                                        <span class="px-2 text-xs font-bold uppercase text-warning">
+                                            class="bx bx-dumbbell bg-gray-800 px-2 py-[.2rem] text-[1rem] font-semibold text-holy"></i>
+                                        <span class="px-2 text-xs font-bold uppercase text-gray-800">
                                             {{ $challenge->mode }}
                                         </span>
                                     </div>
