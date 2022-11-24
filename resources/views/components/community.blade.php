@@ -14,7 +14,7 @@
                          yang kurang pintar.</p>
                  </blockquote>
                  <figcaption class="flex justify-center items-center mt-6 space-x-3">
-                     <img class="w-7 h-7 rounded-full bg-gray-700 border border-slate-600" src="images/team-1.png"
+                     <img class="w-7 h-7 rounded-full bg-gray-700 border border-slate-600" src="/images/team-1.png"
                          alt="profile picture">
                      <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                          <cite class="pr-3 font-medium text-slate-200 dark:text-white">M Syaiful Rizal</cite>

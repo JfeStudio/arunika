@@ -10,7 +10,7 @@
     </div>
 
     {{-- submitted your solution --}}
-    <div class="container mx-auto pt-10 pb-14 flex flex-wrap justify-center md:gap-6 items-center">
+    <div class="container mx-auto py-14 flex flex-wrap justify-center md:gap-6 items-center">
         <div
             class="card max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
