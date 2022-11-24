@@ -29,7 +29,7 @@
                         <span class="font-medium text-dark">See It In Action</span>
                     </button>
                     <button
-                        class="w-2/3 rounded-md bg-primary py-[.65rem] px-4 text-base font-medium text-holy-blur shadow-3xl hover:bg-blue-600 md:max-w-max"
+                        class="w-2/3 rounded-md bg-blue-600 py-[.65rem] px-4 text-base font-medium text-holy-blur shadow-3xl hover:bg-blue-700 md:max-w-max"
                         type="submit">
                         Buy All Templates - $133
                     </button>

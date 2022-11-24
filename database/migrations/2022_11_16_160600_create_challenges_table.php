@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('title')->unique();
             $table->string('markup');
             $table->string('styling');
-            $table->string('language');
+            $table->string('language')->nullable();
             // $table->string('role');
             $table->string('mode');
             $table->string('description');

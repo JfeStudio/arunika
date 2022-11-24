@@ -17,7 +17,9 @@
                     <div class="cols-latest">
                         <div class="card border border-slate-100 max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
                             <div class="card-images relative">
-                                <div class="relative rounded-lg overflow-hidden">
+                                <span
+                                    class="fee absolute right-2 top-2 z-20 block bg-blue-600 rounded-full py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white">{{ $challenge->fee }}</span>
+                                <div class="rounded-lg overflow-hidden">
                                     <a href="{{ route('cards.show', $challenge->id) }}">
                                         <div class="news-info before:z-10"></div>
                                         <img class="h-56 object-cover drop-shadow-sm"
@@ -27,7 +29,7 @@
                             </div>
                             <div class="card-body py-3">
                                 <a href="./challenges-now.html"
-                                    class="mt-1 block capitalize font-serif text-lg font-medium">
+                                    class="mt-1 block capitalize font-serif text-lg lg:text-xl font-medium">
                                     {{ $challenge->title }}
                                 </a>
                                 <div class="info-language my-3 flex justify-between">
@@ -39,10 +41,10 @@
                                         <span
                                             class="text-base font-medium uppercase text-warning">{{ $challenge->language }}</span>
                                     </div>
-                                    <div class="mode flex items-center rounded-sm border border-warning text-slate-50">
+                                    <div class="mode flex items-center rounded-sm border border-red-600 text-slate-50">
                                         <i
-                                            class="bx bx-dumbbell bg-warning px-2 py-[.2rem] text-[1rem] font-semibold text-holy"></i>
-                                        <span class="px-2 text-xs font-bold uppercase text-warning">
+                                            class="bx bx-dumbbell bg-red-600 px-2 py-[.2rem] text-[1rem] font-semibold text-holy"></i>
+                                        <span class="px-2 text-xs font-bold uppercase text-red-600">
                                             {{ $challenge->mode }}
                                         </span>
                                     </div>
