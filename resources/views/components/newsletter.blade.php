@@ -26,7 +26,7 @@
                 </form>
             </div>
             <div class="cols-newsletter order-first md:order-none md:basis-3/6">
-                <img class="hero drop-shadow-lg" src="images/collabs.svg" alt="" />
+                <img class="hero drop-shadow-lg" src="/images/collabs.svg" alt="" />
             </div>
         </div>
     </div>

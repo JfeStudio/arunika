@@ -85,7 +85,7 @@ class ChallengeController extends Controller
     {
        $request->validate([
             'fee' => ['required'],
-            'title' => ['required', 'unique:challenges', 'string', 'min:3', 'max:255',],
+            'title' => ['required', 'string', 'min:3', 'max:255',],
             'markup' => ['required', 'string', 'min:3', 'max:255', 'alpha'],
             'styling' => ['required'],
             'language' => ['required'],
