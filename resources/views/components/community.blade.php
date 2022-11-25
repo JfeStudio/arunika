@@ -25,7 +25,7 @@
              </figure>
              <a href="/hows"
                  class="scale-105 mt-8 m-auto max-w-max flex items-center text-white font-medium rounded-full text-sm px-6 py-2.5 bg-gray-700 hover:bg-gray-600 focus:ring-gray-600 border-gray-700">
-                 Tutorial Challenges
+                 Baca Selengkapnya
                  <i class='bx bx-chevron-right text-slate-100 leading-none text-2xl'></i>
              </a>
          </div>

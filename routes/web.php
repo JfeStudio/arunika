@@ -21,14 +21,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::middleware('auth')->group(function () {
+    Route::get('solutions', SolutionController::class);
+});
+Route::get('sources', SourceController::class, 'index');
 Route::resource('homes', HomeController::class);
 Route::get('/', HomeController::class)->name('home');
-Route::get('solutions', SolutionController::class);
 // Route::get('homes/{home}', [HomeController::class, 'show'])->name('homes.show');
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 Route::resource('challenges', ChallengeController::class);
-Route::get('sources', SourceController::class, 'index');
 Route::get('hows', [HowController::class, 'index']);
 Route::get('templates', [TemplateController::class, 'index']);
 Route::resource('cards', CardController::class);

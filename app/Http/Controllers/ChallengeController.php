@@ -48,7 +48,16 @@ class ChallengeController extends Controller
             'description' => ['required', 'string', 'min:10', 'max:255'],
         ]);
         $input = $request->all();
+         if ($images = $request->file('images')) {
+            $destinationPath = 'images/';
+            $profileImage = date('YmdHis') . "." . $images->getClientOriginalExtension();
+            $images->move($destinationPath, $profileImage);
+            // $nameFile = $request->file('images');
+            // $validatedData['image'] = $request->file('image')->store('post-image');
+            $input['images'] = $profileImage;
+        }
         Challenge::create($input);
+        // dd($input);
         return redirect('challenges')->with('success', 'Data was successful!');
     }
 
@@ -95,6 +104,17 @@ class ChallengeController extends Controller
         ]);
         // dd($request);
         $input = $request->all();
+        if ($images = $request->file('images')) {
+            $destinationPath = 'images/';
+            $profileImage = date('YmdHis') . "." . $images->getClientOriginalExtension();
+            $images->move($destinationPath, $profileImage);
+            // $nameFile = $request->file('images');
+            // $validatedData['images'] = $request->file('image')->store('post-image');
+            $input['images'] = $profileImage;
+        }else {
+            unset($input['images']);
+        }
+
         Challenge::find($id)->update($input);
         return redirect('challenges')->with('success', 'Edited was successful!');
     }

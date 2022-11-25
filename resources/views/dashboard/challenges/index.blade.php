@@ -171,12 +171,18 @@
                                     {{ $challenge->mode }}
                                 </td>
                                 <td class="py-4 px-6">
-                                    <div class="overflow-y-hidden h-10 capitalize">
+                                    <div class="overflow-hidden w-16 h-10 capitalize">
                                         {{ $challenge->description }}
                                     </div>
                                 </td>
                                 <td class="py-4 px-6">
-                                    -
+                                    @if ($challenge->images)
+                                        <img class="w-12 h-12 rounded-md object-cover"
+                                            src="/images/{{ $challenge->images }}" alt="Rounded avatar">
+                                    @else
+                                        <img class="w-12 h-12 rounded-md object-cover"
+                                            src="https://source.unsplash.com/random/1200x700" alt="Rounded avatar">
+                                    @endif
                                 </td>
                                 <td class="py-4 px-6">
                                     <div class="flex items-center gap-x-2">

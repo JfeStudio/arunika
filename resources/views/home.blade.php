@@ -178,8 +178,16 @@
                                 <div class="rounded-lg overflow-hidden">
                                     <a href="{{ route('homes.show', $challenge->id) }}">
                                         <div class="news-info before:z-10"></div>
-                                        <img class="h-56 object-cover drop-shadow-sm"
-                                            src="https://source.unsplash.com/random/1200x700" alt="images project" />
+                                        {{-- <img class="h-56 object-cover drop-shadow-sm"
+                                            src="https://source.unsplash.com/random/1200x700" alt="images project" /> --}}
+                                        @if ($challenge->images)
+                                            <img class="h-56 object-cover drop-shadow-sm"
+                                                src="/images/{{ $challenge->images }}" alt="Rounded avatar">
+                                        @else
+                                            <img class="h-56 object-cover drop-shadow-sm"
+                                                src="https://source.unsplash.com/random/?computer,laptop"
+                                                alt="Rounded avatar">
+                                        @endif
                                     </a>
                                 </div>
                             </div>
@@ -218,7 +226,7 @@
                     </div>
                 @endforeach
             </div>
-            <a class="mx-auto mt-8 block max-w-max text-center text-sm text-dark underline hover:no-underline md:mt-12"
+            <a class="mx-auto mt-8 block max-w-max text-center text-base text-dark underline hover:no-underline md:mt-12"
                 href="/cards">Lihat semua Challenges</a>
         </div>
     </section>
