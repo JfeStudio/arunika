@@ -8,6 +8,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SolutionController;
 use App\Http\Controllers\SourceController;
 use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\UnlockController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +33,7 @@ Route::get('/', HomeController::class)->name('home');
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 Route::resource('challenges', ChallengeController::class);
 Route::get('hows', [HowController::class, 'index']);
+Route::get('unlock', [UnlockController::class, 'index']);
 Route::get('templates', [TemplateController::class, 'index']);
 Route::resource('cards', CardController::class);
 

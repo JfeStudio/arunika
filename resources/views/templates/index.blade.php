@@ -7,10 +7,10 @@
                     Landing page templates for startups
                 </h1>
                 <p class="my-4 px-7 text-center text-sm font-normal text-slate-600 md:px-14 lg:px-60 lg:text-lg">
-                    Beautifully designed
-                    <span class="font-medium text-slate-600">HTML, React, Vue.js, and Tailwind</span>
-                    templates! Save weeks of time and build your startup landing page in
-                    minutes.
+                    Template
+                    <span class="font-medium text-slate-600">HTML, React, Vue.js, dan Tailwind</span>
+                    yang dirancang dengan indah! Hemat waktu berminggu-minggu dan bangun halaman arahan startup Anda
+                    dalam hitungan menit.
                 </p>
                 <div class="images-language flex items-center justify-center gap-x-2">
                     <img src="https://cruip.com/wp-content/themes/cruip-2/dist/images/html.svg" alt="HTML" />
@@ -31,7 +31,7 @@
                     <button
                         class="w-2/3 rounded-md bg-blue-600 py-[.65rem] px-4 text-base font-medium text-holy-blur shadow-3xl hover:bg-blue-700 md:max-w-max"
                         type="submit">
-                        Buy All Templates - $133
+                        Buy All Templates - 450k
                     </button>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                                 <button
                                     class="w-44 rounded-sm bg-primary py-[.6rem] px-4 text-base font-medium text-holy-blur shadow-3xl hover:bg-blue-600"
                                     type="submit">
-                                    Buy Surface - $99
+                                    Buy Surface - 120k
                                 </button>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                                         class="rounded-full bg-tailwind px-3 py-1 text-base font-semibold text-holy-blur md:text-sm">Tailwind
                                         CSS</span>
                                 </div>
-                                <p class="text-base font-bold text-secondary">- $99</p>
+                                <p class="text-base font-bold text-secondary">- 120k</p>
                             </div>
                             <div class="description mt-3">
                                 <p class="text-base font-normal text-secondary md:text-sm lg:text-base">
@@ -104,7 +104,7 @@
                                 <button
                                     class="w-44 rounded-sm bg-primary py-[.6rem] px-4 text-base font-medium text-holy-blur shadow-3xl hover:bg-blue-600"
                                     type="submit">
-                                    Buy Simple - $99
+                                    Buy Simple - 140k
                                 </button>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                                         class="rounded-full bg-tailwind px-3 py-1 text-base font-semibold text-holy-blur md:text-sm">Tailwind
                                         CSS</span>
                                 </div>
-                                <p class="text-base font-bold text-secondary">- $99</p>
+                                <p class="text-base font-bold text-secondary">- 140k</p>
                             </div>
                             <div class="description mt-3">
                                 <p class="text-base font-normal text-secondary md:text-sm lg:text-base">

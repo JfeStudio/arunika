@@ -165,8 +165,8 @@
     <section id="challenges" class="latest py-16 -scroll-mt-24">
         <div class="container relative mx-auto overflow-hidden rounded-t-3xl">
             <div class="rounded-blank absolute top-0 left-0 right-0 -z-10 h-80 bg-dark"></div>
-            <h1 class="my-10 text-center font-serif text-2xl font-medium text-slate-50 md:text-[1.6rem] lg:my-16">
-                Latest Challenges
+            <h1 class="my-10 text-center font-serif text-2xl font-medium text-slate-50 md:text-3xl lg:mt-16 lg:mb-12">
+                Tantangan Terbaru
             </h1>
             <div class="rows-latest flex flex-wrap justify-center gap-y-5 md:gap-6">
                 @foreach ($challenges as $challenge)

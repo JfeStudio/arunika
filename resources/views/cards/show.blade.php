@@ -7,8 +7,15 @@
                     <div class="swiper card-cube max-w-[22rem] md:max-w-xl lg:max-w-lg xl:max-w-xl">
                         <div class="swiper-wrapper h-full">
                             <div class="swiper-slide">
-                                <img
-                                    src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/qkpgcsmter7tah2sjdij.jpg" />
+                                {{-- <img
+                                    src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/qkpgcsmter7tah2sjdij.jpg" /> --}}
+                                    @if ($challenges->images)
+                                        <img
+                                            src="/images/{{ $challenges->images }}" alt="Rounded avatar">
+                                    @else
+                                        <img class="w-12 h-12 rounded-md object-cover"
+                                            src="https://source.unsplash.com/random/1200x700" alt="Rounded avatar">
+                                    @endif
                             </div>
                             <div class="swiper-slide">
                                 <img
