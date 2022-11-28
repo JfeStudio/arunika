@@ -1,4 +1,4 @@
- <section id="community" class="community lg:py-10">
+ <section id="community" class="community lg:py-10 scroll-mt-10">
      <div class="container mx-auto overflow-hidden rounded-3xl bg-gray-800 py-20 lg:py-28">
          <div class="rows-community">
              <figure class="mx-auto max-w-screen-md text-center">

@@ -162,7 +162,7 @@
         </div>
     </section>
     {{-- challenges (latest) --}}
-    <section id="challenges" class="latest py-16 -scroll-mt-24">
+    <section id="challenges" class="latest py-16 -scroll-mt-8">
         <div class="container relative mx-auto overflow-hidden rounded-t-3xl">
             <div class="rounded-blank absolute top-0 left-0 right-0 -z-10 h-80 bg-dark"></div>
             <h1 class="my-10 text-center font-serif text-2xl font-medium text-slate-50 md:text-3xl lg:mt-16 lg:mb-12">

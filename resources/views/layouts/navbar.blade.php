@@ -13,8 +13,11 @@
                         id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                         data-dropdown-placement="bottom">
                         <span class="sr-only">Open user menu</span>
-                        <img class="w-8 h-8 rounded-full object-cover" src="https://source.unsplash.com/random/?people"
-                            alt="user photo">
+                        <div class="relative">
+                            <img class="w-8 h-8 rounded-full object-cover" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                alt="user photo">
+                                <span class="top-0 left-6 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                        </div>
                     </button>
                     <!-- Dropdown menu -->
                     <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"

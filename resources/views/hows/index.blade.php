@@ -8,7 +8,7 @@
                     Apakah kamu seorang Front End Developer?</h1>
                 <p
                     class="mb-6 text-center text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-                    Seorang Front End Developer tidak hanya di tuntut untuk membuat seuatu website saja, tapi mereka juga harus mengerti konsep dari wesbite itu tersebut.</p>
+                    Seorang Front End Developer tidak hanya di tuntut untuk membuat suatu website saja, tapi mereka juga harus mengerti konsep dari wesbite itu tersebut.</p>
                 <p
                     class="mb-6 text-center text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
                     Di sini kita tidak hanya belajar membuat website saja, tapi kita juga di tuntut paham dalam menerka bagian element penting yang ada di dalam suatu website.
