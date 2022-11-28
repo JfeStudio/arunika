@@ -4,25 +4,18 @@
             {{-- intro --}}
             <div class="flex flex-col items-center">
                 <h1
-                    class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                    We invest in the world’s potential</h1>
+                    class="font-lora mb-8 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl dark:text-white">
+                    Apakah kamu seorang Front End Developer?</h1>
                 <p
                     class="mb-6 text-center text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-                    Here at
-                    Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value
-                    and
-                    drive
-                    economic growth.</p>
+                    Seorang Front End Developer tidak hanya di tuntut untuk membuat seuatu website saja, tapi mereka juga harus mengerti konsep dari wesbite itu tersebut.</p>
                 <p
                     class="mb-6 text-center text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-                    Here at
-                    Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value
-                    and
-                    drive
-                    economic growth.</p>
+                    Di sini kita tidak hanya belajar membuat website saja, tapi kita juga di tuntut paham dalam menerka bagian element penting yang ada di dalam suatu website.
+                    </p>
                 <a href="#"
                     class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                    Learn more
+                    Mulai Berlangganan
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -33,23 +26,14 @@
             </div>
             <div class="py-16">
                 <p class="text-gray-500 dark:text-gray-400">
-                    Does your user know how to exit out of screens? Can they follow your intended user journey and buy
-                    something from the site you’ve designed? By running a usability test, you’ll be able to see how
-                    users
-                    will interact with your design once it’s live.
+                    Pembuatan website sendiri tidak luput dari HTML, CSS dan Javacript, entah itu kalian mau menggunakan data statik ataupun dinamis, kita juga tidak hanya belajar fundamental saja, melainkan kita juga di tuntut untuk tau element apa saja yang dibutuhkan dalam membangun sebuah website.
                 </p>
                 <blockquote
                     class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
-                    <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"Flowbite is
-                        just
-                        awesome. It contains tons of predesigned components and pages starting from login screen to
-                        complex
-                        dashboard. Perfect choice for your next SaaS application."</p>
+                    <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"Arunika sangat cocok untuk kamu yang ingin fokus berkarir di bidang Front End Developer, di Arunika kita sudah menyediakan beberapa design website untuk kalian slicing kedalam kodingan"</p>
                 </blockquote>
                 <p class="text-gray-500 dark:text-gray-400">
-                    First of all you need to understand how Flowbite works. This library is not another framework.
-                    Rather,
-                    it is a set of components based on Tailwind CSS that you can just copy-paste from the documentation.
+                    Kita bisa belajar banyak dalam studi kasus pembuatan suatu website, seperti bagaimana cara membuat tabel yang benar, slider, accordion, dan memunculkan modal atau alert, di sini kita sudah menyediakan designnya, tinggal kalian eksekusi.
                 </p>
             </div>
             {{-- how to fuxxking --}}
