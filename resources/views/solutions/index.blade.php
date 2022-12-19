@@ -47,7 +47,7 @@
                 <div class="border-y py-2">
                     <a href="#" class="block items-center gap-3 sm:flex">
                         <img class="p-[0.2rem] object-cover w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                            src="https://source.unsplash.com/random/?people" alt="Jese Leos image" />
+                            src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese Leos image" />
                         <div class="text-gray-600 dark:text-gray-400">
                             <h3 class="text-base font-medium">Jone Youlof</h3>
                             <div class="text-sm font-normal">@jone_elf</div>
@@ -100,7 +100,7 @@
                 <div class="border-y py-2">
                     <a href="#" class="block items-center gap-3 sm:flex">
                         <img class="p-[0.2rem] object-cover w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                            src="https://source.unsplash.com/random/?people" alt="Jese Leos image" />
+                            src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese Leos image" />
                         <div class="text-gray-600 dark:text-gray-400">
                             <h3 class="text-base font-medium">Alice Manabon</h3>
                             <div class="text-sm font-normal">@aline_cia</div>
@@ -152,7 +152,7 @@
                 <div class="border-y py-2">
                     <a href="#" class="block items-center gap-3 sm:flex">
                         <img class="p-[0.2rem] object-cover w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                            src="https://source.unsplash.com/random/?people" alt="Jese Leos image" />
+                            src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese Leos image" />
                         <div class="text-gray-600 dark:text-gray-400">
                             <h3 class="text-base font-medium">Yusuf Gurda</h3>
                             <div class="text-sm font-normal">@yuffda</div>
@@ -204,7 +204,7 @@
                 <div class="border-y py-2">
                     <a href="#" class="block items-center gap-3 sm:flex">
                         <img class="p-[0.2rem] object-cover w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                            src="https://source.unsplash.com/random/?people" alt="Jese Leos image" />
+                            src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese Leos image" />
                         <div class="text-gray-600 dark:text-gray-400">
                             <h3 class="text-base font-medium">Vektor Meyzi</h3>
                             <div class="text-sm font-normal">@vezii</div>
@@ -257,7 +257,7 @@
                 <div class="border-y py-2">
                     <a href="#" class="block items-center gap-3 sm:flex">
                         <img class="p-[0.2rem] object-cover w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                            src="https://source.unsplash.com/random/?people" alt="Jese Leos image" />
+                            src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese Leos image" />
                         <div class="text-gray-600 dark:text-gray-400">
                             <h3 class="text-base font-medium">Hilmi Mitsuki</h3>
                             <div class="text-sm font-normal">@mitshu</div>
@@ -309,7 +309,7 @@
                 <div class="border-y py-2">
                     <a href="#" class="block items-center gap-3 sm:flex">
                         <img class="p-[0.2rem] object-cover w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                            src="https://source.unsplash.com/random/?people" alt="Jese Leos image" />
+                            src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Jese Leos image" />
                         <div class="text-gray-600 dark:text-gray-400">
                             <h3 class="text-base font-medium">Kirigaya Kazuto</h3>
                             <div class="text-sm font-normal">@kirito</div>

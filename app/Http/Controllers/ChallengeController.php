@@ -7,34 +7,21 @@ use Illuminate\Http\Request;
 
 class ChallengeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function index(Request $request)
     {
-        return view('dashboard.challenges.index', [
-            'challenges' => Challenge::orderBy('id', 'DESC')->paginate(3),
-        ]);
+         if ($request->has('search')) {
+          $challenges = Challenge::where('title', 'LIKE', '%' .$request->search. '%')->orderBy('id', 'DESC')->paginate(3);
+        }else {
+            $challenges = Challenge::orderBy('id', 'DESC')->paginate(3);
+        }
+            return view('dashboard.challenges.index', compact('challenges'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('dashboard.challenges.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $request->validate([
@@ -61,35 +48,17 @@ class ChallengeController extends Controller
         return redirect('challenges')->with('success', 'Data was successful!');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function show($id)
     {
         return view('dashboard.challenges.show');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Challenge $challenge)
     {
         return view('dashboard.challenges.edit', compact('challenge'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
        $request->validate([
@@ -119,12 +88,7 @@ class ChallengeController extends Controller
         return redirect('challenges')->with('success', 'Edited was successful!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
         Challenge::find($id)->delete();

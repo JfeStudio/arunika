@@ -12,8 +12,10 @@ body {
 .font-lora {
     font-family: 'Lora', serif;
 }
+/* custom scrollbar */
 ::-webkit-scrollbar {
   width: 14px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 3px rgba(0 0 0 / 0.15);

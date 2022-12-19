@@ -32,6 +32,7 @@ Route::get('/', HomeController::class)->name('home');
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 Route::resource('challenges', ChallengeController::class);
+// Route::get('challenges/search', [ChallengeController::class, 'search'])->name('challenges.search');
 Route::get('hows', [HowController::class, 'index']);
 Route::get('unlock', [UnlockController::class, 'index']);
 Route::get('templates', [TemplateController::class, 'index']);
